@@ -23,6 +23,7 @@
 
   <!-- ===== HERO / INTRO ===== -->
   <section class="hero" id="about">
+    <div class="avatar">A</div>
     <div class="hero-text">
       <p class="eyebrow">B.Tech CSE Student</p>
       <h1>Building games, worlds,<br>and web apps.</h1>
@@ -36,7 +37,7 @@
   </section>
 
   <!-- ===== SKILLS ===== -->
-  <section class="skills" id="skills">
+  <section class="skills fade-section" id="skills">
     <h2>Skills</h2>
     <div class="skill-grid">
       <div class="skill-card">HTML</div>
@@ -49,7 +50,7 @@
   </section>
 
   <!-- ===== PROJECTS ===== -->
-  <section class="projects" id="projects">
+  <section class="projects fade-section" id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
 
@@ -81,7 +82,7 @@
   </section>
 
   <!-- ===== CONTACT ===== -->
-  <section class="contact" id="contact">
+  <section class="contact fade-section" id="contact">
     <h2>Let's connect</h2>
     <p>Open to internships, collaborations, and interesting projects.</p>
     <a href="mailto:youremail@example.com" class="btn">Email Me</a>
@@ -90,6 +91,21 @@
   <footer>
     <p>&copy; 2026 Aditya. Built with HTML & CSS.</p>
   </footer>
+
+  <!-- Fade-in sections as you scroll -->
+  <script>
+    const sections = document.querySelectorAll('.fade-section');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
 
 </body>
 </html>

@@ -14,6 +14,10 @@
   --accent2: #43e5c5;  /* mint - secondary accent */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -70,6 +74,33 @@ a {
 .hero {
   padding: 100px 8% 80px;
   max-width: 780px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--bg);
+  margin-bottom: 24px;
+}
+
+/* To use a real photo instead, replace .avatar in HTML with:
+   <img src="your-photo.jpg" class="avatar-img" />
+   and use this class instead */
+.avatar-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+  border: 3px solid var(--accent2);
 }
 
 .eyebrow {
@@ -213,6 +244,18 @@ footer {
   color: var(--text-dim);
   font-size: 0.85rem;
   border-top: 1px solid #ffffff14;
+}
+
+/* ===== SCROLL FADE-IN ===== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ===== RESPONSIVE ===== */
