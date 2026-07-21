@@ -217,6 +217,27 @@ section h2::after {
   color: var(--text);
 }
 
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #ffffff0d;
+  border: 1px solid #ffffff1c;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  padding: 7px 14px;
+  border-radius: 20px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tag:hover {
+  border-color: var(--accent2);
+  color: var(--text);
+}
+
 /* ===== PROJECTS ===== */
 .projects {
   padding: 60px 8%;
