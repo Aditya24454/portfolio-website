@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditya | Full-Stack &amp; Game Developer</title>
-  <meta name="description" content="Aditya — B.Tech CSE student at Presidency University building full-stack web apps and Unity games. Java, React, and interactive worlds, one shipped build at a time." />
-  <meta name="keywords" content="Aditya, portfolio, full-stack developer, Unity developer, game developer, Presidency University, Java, React, web developer Bengaluru" />
-  <meta name="author" content="Aditya" />
+  <title>Aditya Kumar | Software Engineer — Full-Stack, AI/ML &amp; Game Development</title>
+  <meta name="description" content="Aditya Kumar — B.Tech CSE student at Presidency University building full-stack systems, AI-powered cybersecurity solutions, and Unity games. Open to Software Engineering internships." />
+  <meta name="keywords" content="Aditya Kumar, portfolio, software engineer, full-stack developer, Java backend developer, Unity developer, machine learning, cybersecurity, Presidency University" />
+  <meta name="author" content="Aditya Kumar" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Aditya | Full-Stack & Game Developer" />
-  <meta property="og:description" content="Playable worlds, and the web that ships them. Full-stack + Unity projects, one build at a time." />
-  <meta property="og:site_name" content="Aditya's Portfolio" />
+  <meta property="og:title" content="Aditya Kumar | Software Engineer" />
+  <meta property="og:description" content="Full-stack systems, AI-powered cybersecurity, and Unity-built worlds — one shipped build at a time." />
+  <meta property="og:site_name" content="Aditya Kumar's Portfolio" />
 
   <!-- Favicon (inline SVG, no external file needed) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312141c'/%3E%3Ctext x='32' y='44' font-family='Space Grotesk,Segoe UI,sans-serif' font-size='34' font-weight='700' fill='%2343e5c5' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -30,14 +34,23 @@
     <nav>
       <ul>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-resume-nav">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+      Resume
+    </a>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
       <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
   </header>
 
@@ -50,9 +63,9 @@
     <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-todo" title="Add your LinkedIn URL">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
     </a>
-    <!-- TODO: replace # with your real X/Twitter URL -->
-    <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-todo" title="Add your X/Twitter URL">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.66L23.3 22h-6.9l-5.4-7.06L4.8 22H1.7l8.1-9.26L1 2h7.1l4.9 6.5L18.9 2zm-1.2 18h1.9L7.4 3.9H5.4L17.7 20z"/></svg>
+    <!-- TODO: replace # with your real email -->
+    <a href="mailto:youremail@example.com" aria-label="Email" class="social-todo" title="Update your email address">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4V4z" opacity="0"/><path d="M4 6h16v12H4V6zm0 0l8 7 8-7"/></svg>
     </a>
   </div>
 
@@ -60,96 +73,303 @@
   <section class="hero" id="about">
     <div class="hero-bg" aria-hidden="true"></div>
 
-    <!-- Letter avatar. To swap in a real photo, replace this whole <div class="avatar"> block with:
-         <img src="your-photo.jpg" alt="Aditya" class="avatar-img" /> -->
-    <div class="avatar" id="avatar"><span>A</span></div>
+    <div class="avatar" id="avatar"><span>AK</span></div>
 
-    <p class="eyebrow">Build v0.3 &nbsp;·&nbsp; B.Tech CSE, Presidency University</p>
-    <h1>Playable worlds.<br>Shipped with real code.</h1>
-    <p class="hero-sub">
-      Full-stack developer in training, game developer by instinct — Java and React on one side, Unity on the other.
+    <p class="eyebrow">&gt; whoami &nbsp;·&nbsp; B.Tech CSE, Presidency University, Bengaluru</p>
+    <h1>Aditya Kumar</h1>
+    <p class="hero-role">
+      Full-Stack Developer <span class="dot-sep">·</span> Java Backend Developer <span class="dot-sep">·</span> Unity Game Developer <span class="dot-sep">·</span> AI &amp; Cybersecurity Enthusiast
     </p>
+    <p class="hero-sub">
+      I build scalable full-stack applications, AI-powered cybersecurity solutions, and Unity-based game systems.
+      Passionate about solving real-world problems through software engineering, backend development, machine
+      learning, and interactive experiences.
+    </p>
+    <p class="hero-status">
+      <span class="ticker-dot"></span>
+      Currently looking for <strong>Software Engineering internships</strong> — Full-Stack · Backend · Game Dev · Cybersecurity
+    </p>
+
     <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="https://github.com/Aditya24454" target="_blank" rel="noopener" class="btn btn-secondary">See my GitHub</a>
+      <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">Download Resume</a>
+      <a href="#projects" class="btn btn-secondary">View Projects</a>
+      <a href="https://github.com/Aditya24454" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      <!-- TODO: replace # with your real LinkedIn URL -->
+      <a href="#" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
     </div>
+
     <div class="ticker">
       <span class="ticker-dot"></span>
       <span>Currently building: <strong>Alpha4</strong> — enemy AI &amp; combat mechanics in Unity</span>
     </div>
   </section>
 
-  <!-- ===== SKILLS ===== -->
+  <!-- ===== EDUCATION ===== -->
+  <section class="education fade-section" id="education">
+    <p class="section-kicker">Background</p>
+    <h2>Education</h2>
+
+    <div class="edu-timeline">
+      <div class="edu-node"></div>
+      <div class="edu-card">
+        <div class="edu-card-top">
+          <h3>Bachelor of Technology — Computer Science Engineering</h3>
+          <!-- TODO: set your expected graduation year -->
+          <span class="edu-badge">Expected Graduation: 20XX</span>
+        </div>
+        <p class="edu-school">Presidency University, Bengaluru</p>
+        <p class="edu-label">Relevant Coursework</p>
+        <div class="tag-group">
+          <span class="tag">Data Structures &amp; Algorithms</span>
+          <span class="tag">Database Management Systems</span>
+          <span class="tag">Operating Systems</span>
+          <span class="tag">Computer Networks</span>
+          <span class="tag">Object-Oriented Programming</span>
+          <span class="tag">Analysis of Algorithms</span>
+          <span class="tag">Artificial Intelligence</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK / SKILLS ===== -->
   <section class="skills fade-section" id="skills">
-    <h2>Skills</h2>
+    <p class="section-kicker">Toolbox</p>
+    <h2>Tech Stack</h2>
     <div class="skills-categories">
 
       <div class="skill-category">
-        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg> Languages &amp; Web</h3>
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg> Frontend</h3>
         <div class="tag-group">
-          <span class="tag tag-core">Java</span>
+          <span class="tag tag-core">React.js</span>
           <span class="tag tag-core">JavaScript</span>
-          <span class="tag tag-core">SQL</span>
-          <span class="tag tag-core">HTML5 / CSS3</span>
-          <span class="tag">React.js</span>
-          <span class="tag">MySQL</span>
-          <span class="tag">PHP</span>
-          <span class="tag">REST APIs</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Vite</span>
+          <span class="tag">Responsive Web Design</span>
         </div>
       </div>
 
       <div class="skill-category">
-        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Tools &amp; Practice</h3>
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 10h16M10 4v16"/></svg> Backend</h3>
+        <div class="tag-group">
+          <span class="tag tag-core">Java</span>
+          <span class="tag tag-core">Java Servlets</span>
+          <span class="tag tag-core">REST APIs</span>
+          <span class="tag">JDBC</span>
+          <span class="tag">Flask</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg> Databases</h3>
+        <div class="tag-group">
+          <span class="tag tag-core">MySQL</span>
+          <span class="tag">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"/></svg> Languages</h3>
+        <div class="tag-group">
+          <span class="tag tag-core">Java</span>
+          <span class="tag tag-core">Python</span>
+          <span class="tag tag-core">JavaScript</span>
+          <span class="tag">SQL</span>
+          <span class="tag">C#</span>
+          <span class="tag">PHP</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg> Machine Learning &amp; AI</h3>
+        <div class="tag-group">
+          <span class="tag tag-core">TensorFlow</span>
+          <span class="tag tag-core">Scikit-Learn</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Deep Learning</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z"/></svg> Cybersecurity</h3>
+        <div class="tag-group">
+          <span class="tag tag-core">Intrusion Detection Systems</span>
+          <span class="tag">Network Traffic Analysis</span>
+          <span class="tag">Threat Detection</span>
+          <span class="tag">Zero-Day Attack Detection</span>
+          <span class="tag">Wireless Sensor Networks</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Tools &amp; Technologies</h3>
         <div class="tag-group">
           <span class="tag tag-core">Git &amp; GitHub</span>
-          <span class="tag tag-core">Full-Stack Dev</span>
+          <span class="tag tag-core">Unity</span>
           <span class="tag">VS Code</span>
-          <span class="tag">Unity (C#)</span>
-          <span class="tag">Responsive Design</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Wireshark</span>
+          <span class="tag">Metasploit</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><svg class="cat-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/></svg> CS Fundamentals</h3>
+        <div class="tag-group">
+          <span class="tag tag-core">Data Structures &amp; Algorithms</span>
+          <span class="tag">DBMS</span>
+          <span class="tag">OOP</span>
+          <span class="tag">Operating Systems</span>
+          <span class="tag">Computer Networks</span>
+          <span class="tag">Software Engineering</span>
         </div>
       </div>
 
     </div>
   </section>
 
+  <!-- ===== FEATURED PROJECT: COFFEESHOP ===== -->
+  <section class="featured-case fade-section" id="featured">
+    <p class="section-kicker">Case Study</p>
+    <h2>Featured Project</h2>
+
+    <div class="case-card">
+      <div class="case-visual" aria-hidden="true">
+        <div class="case-window">
+          <div class="case-window-bar"><span></span><span></span><span></span></div>
+          <div class="case-window-body">
+            <p class="case-line"><span class="case-prompt">$</span> mvn spring-boot:run</p>
+            <p class="case-line case-out">Starting CoffeeShopApplication...</p>
+            <p class="case-line case-out">Connected to jdbc:mysql://localhost/coffeeshop</p>
+            <p class="case-line case-out ok">✔ Auth · Cart · Orders · Billing · Admin — all routes live</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-content">
+        <div class="case-top">
+          <span class="status status-shipped">Completed</span>
+          <span class="project-stack">☕ Java · Servlets · JDBC · MySQL</span>
+        </div>
+        <h3>CoffeeShop — Full-Stack Coffee Shop Management System</h3>
+        <p>
+          An end-to-end ordering platform modeled on a real coffee-shop workflow: customers browse and order,
+          admins manage stock, and every transaction lands in a normalized MySQL schema behind a clean Java
+          servlet backend.
+        </p>
+
+        <div class="case-features">
+          <span>User Authentication (Login &amp; Signup)</span>
+          <span>Product Management</span>
+          <span>Cart Management</span>
+          <span>Order Processing</span>
+          <span>Billing System</span>
+          <span>Admin Dashboard</span>
+          <span>Stock &amp; Restock Management</span>
+          <span>Password Security Utilities</span>
+        </div>
+
+        <div class="tag-group case-tags">
+          <span class="tag tag-core">Java</span>
+          <span class="tag tag-core">Java Servlets</span>
+          <span class="tag tag-core">JDBC</span>
+          <span class="tag tag-core">MySQL</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Git &amp; GitHub</span>
+        </div>
+
+        <div class="case-actions">
+          <a href="https://github.com/Aditya24454/CoffeeShop" target="_blank" rel="noopener" class="btn btn-primary">GitHub Repo →</a>
+          <!-- TODO: add a live demo link if you deploy this -->
+          <a href="#" class="btn btn-secondary disabled-link" title="Add your live demo URL">Live Demo</a>
+          <!-- TODO: link a README / documentation page -->
+          <a href="https://github.com/Aditya24454/CoffeeShop#readme" target="_blank" rel="noopener" class="btn btn-ghost">Documentation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== PROJECTS ===== -->
   <section class="projects fade-section" id="projects">
+    <p class="section-kicker">Selected Work</p>
     <h2>Projects</h2>
     <div class="project-grid">
 
       <article class="project-card project-featured">
-        <span class="featured-label">Featured</span>
+        <span class="featured-label">AI / Research</span>
         <div class="project-top">
-          <span class="status status-shipped">Shipped</span>
+          <span class="status status-shipped">Completed</span>
+          <span class="project-stack">🧠 ML · Deep Learning · WSN Security</span>
+        </div>
+        <h3>AI-Powered Intrusion Detection &amp; Prevention System</h3>
+        <p class="project-subtitle">A Situation-Based Predictive Approach for Cybersecurity IDPS Using ML &amp; Deep Learning in Wireless Sensor Networks of Industry 4.0</p>
+        <p>
+          A threat-detection framework for Industry 4.0 wireless sensor networks that combines classical ML and
+          deep learning to catch both known and zero-day attacks in real time, then prioritizes and routes each
+          alert through an automated incident-response pipeline.
+        </p>
+        <div class="case-features case-features-compact">
+          <span>Real-Time Threat Detection</span>
+          <span>Zero-Day Attack Detection</span>
+          <span>Behaviour-Based Detection</span>
+          <span>Threat Prioritization</span>
+          <span>React Monitoring Dashboard</span>
+          <span>Cloud Deployment Support</span>
+        </div>
+        <div class="model-stats">
+          <div class="model-stat"><span class="model-stat-num">~95%</span><span class="model-stat-label">Detection Accuracy</span></div>
+          <div class="model-stat"><span class="model-stat-num">6</span><span class="model-stat-label">ML/DL Models</span></div>
+          <div class="model-stat"><span class="model-stat-num">Low</span><span class="model-stat-label">False Positive Rate</span></div>
+        </div>
+        <div class="tag-group">
+          <span class="tag tag-core">Random Forest</span>
+          <span class="tag tag-core">SVM</span>
+          <span class="tag tag-core">KNN</span>
+          <span class="tag tag-core">Isolation Forest</span>
+          <span class="tag tag-core">Neural Networks</span>
+          <span class="tag tag-core">Autoencoders</span>
+        </div>
+        <div class="tag-group">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Scikit-Learn</span>
+          <span class="tag">Flask</span>
+          <span class="tag">React.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Azure</span>
+          <span class="tag">Wireshark</span>
+          <span class="tag">Metasploit</span>
+          <span class="tag">Streamlit</span>
+        </div>
+        <div class="case-actions">
+          <!-- TODO: link the GitHub repo for this project -->
+          <a href="#" class="btn btn-secondary disabled-link" title="Add your repo URL">GitHub →</a>
+          <!-- TODO: link the published paper if available -->
+          <a href="#" class="btn btn-ghost disabled-link" title="Add your paper URL">Research Paper</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="status status-shipped">Completed</span>
           <span class="project-stack">☕ Java · Servlets · MySQL</span>
         </div>
         <h3>Hospital Management System</h3>
-        <p>A paper front desk, rebuilt in code. Patients, appointments, and
-          staff records stay in sync across a normalized MySQL schema and
-          servlet-driven backend — three moving parts, one source of truth.</p>
-        <a href="https://github.com/Aditya24454/HospitalManagementSystem" target="_blank">View code →</a>
-      </article>
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="status status-shipped">Shipped</span>
-          <span class="project-stack">🎮 Unity · C#</span>
+        <p>Patients, appointments, staff, and billing kept in sync across a normalized MySQL schema and a servlet-driven backend, with full CRUD across every module.</p>
+        <div class="tag-group">
+          <span class="tag">Java</span>
+          <span class="tag">JDBC</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Java Servlets</span>
         </div>
-        <h3>Maze Ball Game</h3>
-        <p>Tilt, roll, don't fall. A physics-driven 3D maze built to master
-          Unity's rigidbody physics and camera follow systems.</p>
-        <a href="https://github.com/Aditya24454/maze-ball-game" target="_blank">View code →</a>
-      </article>
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="status status-shipped">Shipped</span>
-          <span class="project-stack">☕ Java · Backend</span>
-        </div>
-        <h3>CoffeeShop Backend</h3>
-        <p>Menu, cart, checkout — the order pipeline behind every coffee
-          shop, modeled in clean Java backend logic.</p>
-        <a href="https://github.com/Aditya24454/CoffeeShop" target="_blank">View code →</a>
+        <a href="https://github.com/Aditya24454/HospitalManagementSystem" target="_blank" rel="noopener">View code →</a>
       </article>
 
       <article class="project-card">
@@ -158,28 +378,209 @@
           <span class="project-stack">🎮 Unity · Enemy AI</span>
         </div>
         <h3>Alpha4</h3>
-        <p>Enemies that path, notice, and strike. Combat AI built from
-          scratch — detection, pursuit, and attack states.</p>
-        <a href="https://github.com/Aditya24454/Alpha4" target="_blank">View code →</a>
+        <p>Unity combat and enemy AI system — detection mechanics, attack states, NPC behaviour, and state-machine-driven gameplay logic built from scratch.</p>
+        <div class="tag-group">
+          <span class="tag">Enemy AI</span>
+          <span class="tag">Combat System</span>
+          <span class="tag">State Machines</span>
+          <span class="tag">Unity Physics</span>
+        </div>
+        <a href="https://github.com/Aditya24454/Alpha4" target="_blank" rel="noopener">View code →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="status status-shipped">Completed</span>
+          <span class="project-stack">🎮 Unity · C#</span>
+        </div>
+        <h3>Maze Ball Game</h3>
+        <p>A physics-based 3D maze built to master Unity's rigidbody physics, camera-follow systems, and level design fundamentals.</p>
+        <div class="tag-group">
+          <span class="tag">Rigidbody Physics</span>
+          <span class="tag">Camera Follow</span>
+          <span class="tag">3D Gameplay</span>
+        </div>
+        <a href="https://github.com/Aditya24454/maze-ball-game" target="_blank" rel="noopener">View code →</a>
       </article>
 
     </div>
   </section>
 
+  <!-- ===== CURRENTLY BUILDING ===== -->
+  <section class="building fade-section" id="building">
+    <p class="section-kicker">Live Build</p>
+    <h2>Currently Building</h2>
+
+    <div class="build-card">
+      <div class="build-top">
+        <div>
+          <span class="build-status"><span class="ticker-dot"></span> In Development</span>
+          <h3>Alpha4</h3>
+          <p class="project-stack">🎮 Unity · C# · Enemy AI &amp; Combat Systems</p>
+        </div>
+      </div>
+
+      <div class="progress-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Alpha4 development progress">
+        <div class="progress-fill" style="width: 65%;"></div>
+      </div>
+      <p class="progress-label">65% — core combat loop complete, polishing detection &amp; state transitions</p>
+
+      <div class="tag-group">
+        <span class="tag tag-core">Enemy AI</span>
+        <span class="tag tag-core">Combat System</span>
+        <span class="tag">NPC Behaviour</span>
+        <span class="tag">Detection System</span>
+        <span class="tag">State Machines</span>
+        <span class="tag">Unity Game Mechanics</span>
+      </div>
+
+      <div class="dev-timeline">
+        <div class="dev-step done">
+          <span class="dev-dot"></span>
+          <div><p class="dev-step-title">Core movement &amp; state machine</p><p class="dev-step-meta">Done</p></div>
+        </div>
+        <div class="dev-step done">
+          <span class="dev-dot"></span>
+          <div><p class="dev-step-title">Enemy detection &amp; pursuit</p><p class="dev-step-meta">Done</p></div>
+        </div>
+        <div class="dev-step active">
+          <span class="dev-dot"></span>
+          <div><p class="dev-step-title">Combat &amp; attack states</p><p class="dev-step-meta">In progress</p></div>
+        </div>
+        <div class="dev-step">
+          <span class="dev-dot"></span>
+          <div><p class="dev-step-title">Polish, VFX &amp; playtesting</p><p class="dev-step-meta">Up next</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="achievements fade-section" id="achievements">
+    <p class="section-kicker">Highlights</p>
+    <h2>Achievements</h2>
+
+    <div class="achieve-grid">
+      <div class="achieve-card">
+        <span class="achieve-icon">🚀</span>
+        <p>Built multiple full-stack and game development projects, from database-backed servlet apps to Unity combat systems.</p>
+      </div>
+      <div class="achieve-card">
+        <span class="achieve-icon">🛡️</span>
+        <p>Developed an AI-powered cybersecurity intrusion detection system for Industry 4.0 wireless sensor networks.</p>
+      </div>
+      <div class="achieve-card">
+        <span class="achieve-icon">🎯</span>
+        <p>Open to Software Engineering internships across full-stack, backend, and applied AI roles.</p>
+      </div>
+      <div class="achieve-card">
+        <span class="achieve-icon">⚙️</span>
+        <p>Passionate about backend development and machine learning, with a focus on systems that hold up in production.</p>
+      </div>
+      <div class="achieve-card">
+        <span class="achieve-icon">📚</span>
+        <p>Continuously learning across full-stack development, Unity game development, and cybersecurity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GITHUB STATS ===== -->
+  <section class="github-stats fade-section" id="github">
+    <p class="section-kicker">Open Source</p>
+    <h2>GitHub Activity</h2>
+    <div class="stats-grid">
+      <img src="https://github-readme-stats.vercel.app/api?username=Aditya24454&show_icons=true&hide_title=true&count_private=true&theme=transparent" alt="Aditya's GitHub stats" loading="lazy" class="stats-img" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aditya24454&layout=compact&hide_title=true&theme=transparent" alt="Aditya's most used languages" loading="lazy" class="stats-img" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Aditya24454&theme=transparent" alt="Aditya's GitHub contribution streak" loading="lazy" class="stats-img stats-img-wide" />
+    </div>
+    <p class="stats-note">Live stats pulled directly from GitHub — updates automatically as new commits land.</p>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="certifications fade-section" id="certifications">
+    <p class="section-kicker">Credentials</p>
+    <h2>Certifications</h2>
+    <!-- TODO: replace with your actual certifications, issuers and dates -->
+    <div class="cert-grid">
+      <div class="cert-card cert-placeholder">
+        <span class="cert-tag">Full-Stack Development</span>
+        <h3>Add certification title</h3>
+        <p class="cert-meta">Issuer · Year</p>
+      </div>
+      <div class="cert-card cert-placeholder">
+        <span class="cert-tag">Java</span>
+        <h3>Add certification title</h3>
+        <p class="cert-meta">Issuer · Year</p>
+      </div>
+      <div class="cert-card cert-placeholder">
+        <span class="cert-tag">Cybersecurity</span>
+        <h3>Add certification title</h3>
+        <p class="cert-meta">Issuer · Year</p>
+      </div>
+      <div class="cert-card cert-placeholder">
+        <span class="cert-tag">Machine Learning</span>
+        <h3>Add certification title</h3>
+        <p class="cert-meta">Issuer · Year</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="resume fade-section" id="resume">
+    <p class="section-kicker">Documents</p>
+    <h2>Resume</h2>
+    <div class="resume-card">
+      <div>
+        <p class="resume-status"><span class="ticker-dot"></span> Available for Software Engineering internships</p>
+        <p class="resume-desc">Full-stack development, backend engineering, applied ML, and game development.</p>
+      </div>
+      <div class="resume-actions">
+        <!-- TODO: replace resume.pdf with your actual resume file -->
+        <a href="resume.pdf" download class="btn btn-primary">Download Resume</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-secondary">View Resume</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CONTACT ===== -->
   <section class="contact fade-section" id="contact">
+    <p class="section-kicker">Get in touch</p>
     <h2>Let's connect</h2>
-    <p>Open to internships, collaborations, and interesting projects.</p>
-    <a href="mailto:youremail@example.com" class="btn btn-primary">Email Me</a>
+    <p class="contact-status"><span class="ticker-dot"></span> Open to internships, collaborations, and interesting problems.</p>
+
+    <div class="contact-grid">
+      <!-- TODO: replace with your real email address -->
+      <a href="mailto:youremail@example.com" class="contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4V6zm0 0l8 7 8-7"/></svg>
+        <span>youremail@example.com</span>
+      </a>
+      <a href="https://github.com/Aditya24454" target="_blank" rel="noopener" class="contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.79-.25.79-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.21.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        <span>github.com/Aditya24454</span>
+      </a>
+      <!-- TODO: replace # with your real LinkedIn URL -->
+      <a href="#" target="_blank" rel="noopener" class="contact-item social-todo">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        <span>Add your LinkedIn URL</span>
+      </a>
+      <!-- TODO: add / update your location -->
+      <div class="contact-item contact-item-static">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Bengaluru, India</span>
+      </div>
+    </div>
+
+    <a href="mailto:youremail@example.com" class="btn btn-primary contact-cta">Email Me</a>
   </section>
 
   <footer>
     <div class="footer-links">
       <a href="https://github.com/Aditya24454" target="_blank" rel="noopener">GitHub</a>
       <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
       <a href="#about">Back to top</a>
     </div>
-    <p>&copy; <span id="year"></span> Aditya. Built with HTML &amp; CSS.</p>
+    <p>&copy; <span id="year"></span> Aditya Kumar. Built with HTML, CSS &amp; JavaScript.</p>
   </footer>
 
   <!-- ===== BACK TO TOP ===== -->
@@ -187,87 +588,6 @@
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
 
-  <script>
-    /* ---- Footer year ---- */
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    /* ---- Fade-in sections on scroll ---- */
-    const sections = document.querySelectorAll('.fade-section');
-    const fadeObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.15 });
-    sections.forEach(section => fadeObserver.observe(section));
-
-    /* ---- Active nav link highlighting ---- */
-    const navLinks = document.querySelectorAll('.nav-link');
-    const navSections = document.querySelectorAll('section[id]');
-    const navObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(link => {
-            link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
-          });
-        }
-      });
-    }, { rootMargin: '-45% 0px -45% 0px' });
-    navSections.forEach(section => navObserver.observe(section));
-
-    /* ---- Scroll progress bar + back-to-top visibility ---- */
-    const progressBar = document.getElementById('scrollProgress');
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-      progressBar.style.width = pct + '%';
-      backToTop.classList.toggle('visible', scrollTop > 400);
-    });
-    backToTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    /* ---- Theme toggle (persisted) ---- */
-    const themeToggle = document.getElementById('themeToggle');
-    const root = document.documentElement;
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') root.setAttribute('data-theme', 'light');
-    themeToggle.addEventListener('click', () => {
-      const isLight = root.getAttribute('data-theme') === 'light';
-      if (isLight) {
-        root.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        root.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-
-    /* ---- Cursor-following glow + tilt on avatar ---- */
-    const avatar = document.getElementById('avatar');
-    const heroSection = document.querySelector('.hero');
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches === false) {
-      heroSection.addEventListener('mousemove', (e) => {
-        const rect = avatar.getBoundingClientRect();
-        const dx = e.clientX - (rect.left + rect.width / 2);
-        const dy = e.clientY - (rect.top + rect.height / 2);
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        const maxDist = 260;
-        const strength = Math.max(0, 1 - dist / maxDist);
-        avatar.style.setProperty('--glow-x', `${50 + (dx / maxDist) * 30}%`);
-        avatar.style.setProperty('--glow-y', `${50 + (dy / maxDist) * 30}%`);
-        avatar.style.setProperty('--glow-strength', strength.toFixed(2));
-        avatar.style.setProperty('--tilt-x', `${(dy / maxDist) * -8}deg`);
-        avatar.style.setProperty('--tilt-y', `${(dx / maxDist) * 8}deg`);
-      });
-      heroSection.addEventListener('mouseleave', () => {
-        avatar.style.setProperty('--tilt-x', '0deg');
-        avatar.style.setProperty('--tilt-y', '0deg');
-        avatar.style.setProperty('--glow-strength', '0');
-      });
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
