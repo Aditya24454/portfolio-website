@@ -185,13 +185,23 @@ section {
   background: var(--surface);
   border: 1px solid var(--border);
   color: var(--text-dim);
-  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
 .social-rail a:hover {
   color: var(--accent2);
   border-color: var(--accent2);
   transform: translateY(-3px);
+}
+
+/* Placeholder links (LinkedIn/X not filled in yet) are visibly dimmer
+   so it's obvious at a glance they still need real URLs. */
+.social-rail a.social-todo {
+  opacity: 0.4;
+}
+
+.social-rail a.social-todo:hover {
+  opacity: 1;
 }
 
 @media (max-width: 700px) {
@@ -229,20 +239,33 @@ section {
   --glow-x: 50%;
   --glow-y: 50%;
   --glow-strength: 0;
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  padding: 3px;
+  background: conic-gradient(from 0deg, var(--accent), var(--accent2), var(--amber), var(--accent));
+  margin-bottom: var(--space-3);
+  isolation: isolate;
+  transform: perspective(400px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transition: transform 0.15s ease-out;
+  animation: spinRing 7s linear infinite;
+}
+
+.avatar span {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg);
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--bg);
-  margin-bottom: var(--space-3);
-  isolation: isolate;
+  color: var(--text);
 }
 
 .avatar::after {
@@ -256,7 +279,12 @@ section {
   z-index: -1;
 }
 
-/* To use a real photo instead, swap .avatar's <div>A</div> in HTML for:
+@keyframes spinRing {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}
+
+/* To use a real photo instead, swap .avatar's inner markup in HTML for:
    <img src="your-photo.jpg" class="avatar-img" /> */
 .avatar-img {
   width: 88px;
@@ -390,16 +418,17 @@ section h2::after {
 /* ===== SKILLS ===== */
 .skills-categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-2);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-3);
   margin-top: var(--space-2);
+  max-width: 780px;
 }
 
 .skill-category {
   background: var(--surface);
   border: 1px solid var(--border);
   border-top: 3px solid var(--accent2);
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-3);
   border-radius: var(--radius);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -414,7 +443,7 @@ section h2::after {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   margin-bottom: var(--space-2);
   color: var(--accent2);
   text-transform: uppercase;
@@ -432,44 +461,27 @@ section h2::after {
 }
 
 .tag {
-  position: relative;
-  background: #ffffff0d;
+  background: transparent;
   border: 1px solid var(--border);
   color: var(--text-dim);
-  font-size: 0.85rem;
-  padding: 6px 13px 6px 24px;
+  font-size: 0.83rem;
+  padding: 6px 14px;
   border-radius: 20px;
   transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
 
-.tag::before {
-  content: "";
-  position: absolute;
-  left: 11px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--text-dim);
-  opacity: 0.5;
-}
-
-.tag[data-level="high"]::before {
-  background: var(--accent2);
-  opacity: 1;
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent2) 25%, transparent);
-}
-
-.tag[data-level="mid"]::before {
-  background: var(--amber);
-  opacity: 0.85;
+/* Core skills get a filled, higher-contrast pill; everything else stays
+   quiet outline-only — one visual tier instead of a dot-coded legend. */
+.tag.tag-core {
+  background: color-mix(in srgb, var(--accent2) 14%, transparent);
+  border-color: color-mix(in srgb, var(--accent2) 45%, var(--border));
+  color: var(--text);
+  font-weight: 600;
 }
 
 .tag:hover {
   border-color: var(--accent2);
   color: var(--text);
-  background: #ffffff17;
 }
 
 /* ===== PROJECTS ===== */
